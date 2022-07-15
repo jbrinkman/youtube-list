@@ -1,0 +1,40 @@
+{
+  "name": "youtube-list",
+  "version": "1.0.0",
+  "description": "A simple Node CLI for retrieving data from a YouTube playlist",
+  "main": "dist/index.d.ts",
+  "bin": {
+    "yt": "dist/index.js"
+  },
+  "scripts": {
+    "clean": "rimraf dist || true",
+    "clean:all": "npm run clean && (rimraf node_modules || true)",
+    "build": "npm run clean && tsc",
+    "build:only": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbrinkman/youtube-list.git"
+  },
+  "keywords": [
+    "YouTube",
+    "CLI"
+  ],
+  "author": "Joe Brinkman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jbrinkman/youtube-list/issues"
+  },
+  "homepage": "https://github.com/jbrinkman/youtube-list#readme",
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "yargs": "^17.5.1",
+    "youtube.ts": "^0.2.9"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^18.0.4",
+    "@types/yargs": "^17.0.10",
+    "rimraf": "^3.0.2"
+  }
+}
